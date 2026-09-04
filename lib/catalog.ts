@@ -23,31 +23,7 @@ const VG = ["vegetarian"] as Diet[]; // may include eggs
 const VN = ["vegetarian", "nonveg"] as Diet[];
 
 export const CATALOG: CatalogMeal[] = [
-  {
-    id: "oat-yogurt",
-    name: "Lemon yogurt oats",
-    description: "Warm oats with yogurt, a squeeze of lemon, and whatever fruit you have.",
-    cuisine: "American",
-    mealTypes: ["breakfast"],
-    diets: V,
-    timeMin: 10,
-    uses: ["oats", "yogurt", "lemon", "milk", "banana", "honey"],
-    staples: ["rolled oats", "honey"],
-    ingredients: [
-      "1 cup rolled oats",
-      "1 cup milk or water",
-      "1/2 cup yogurt",
-      "1/2 lemon, juiced",
-      "fruit you have, sliced",
-    ],
-    steps: [
-      "Simmer oats in milk until creamy, about 5 minutes.",
-      "Stir in yogurt off the heat so it stays silky.",
-      "Finish with lemon and fruit.",
-    ],
-    notes: "Skip honey for a fully unsweetened bowl. Maple works if you keep it.",
-    packable: false,
-  }
+  { id: "oat-yogurt", name: "Lemon yogurt oats", description: "Warm oats with yogurt, a squeeze of lemon, and whatever fruit you have.", cuisine: "American", mealTypes: ["breakfast"], diets: V, timeMin: 10, uses: ["oats", "yogurt", "lemon", "milk", "banana", "honey"], staples: ["rolled oats", "honey"], ingredients: ["1 cup rolled oats", "1 cup milk or water", "1/2 cup yogurt", "1/2 lemon, juiced", "fruit you have, sliced"], steps: ["Simmer oats in milk until creamy, about 5 minutes.", "Stir in yogurt off the heat so it stays silky.", "Finish with lemon and fruit."], notes: "Skip honey for a fully unsweetened bowl. Maple works if you keep it.", packable: false },
 ];
 
 export function mealFitsDiet(meal: CatalogMeal, diet: Diet): boolean {
