@@ -41,6 +41,22 @@ export const GROCERY_SECTIONS = [
 ] as const;
 export type GrocerySection = (typeof GROCERY_SECTIONS)[number];
 
+export type CatalogMeal = {
+  id: string;
+  name: string;
+  description: string;
+  cuisine: Exclude<Cuisine, "Surprise me">;
+  mealTypes: MealType[];
+  diets: Diet[];
+  timeMin: number;
+  uses: string[];
+  staples: string[];
+  ingredients: string[];
+  steps: string[];
+  notes: string;
+  packable: boolean;
+};
+
 export type MealSuggestion = {
   id: string;
   name: string;
